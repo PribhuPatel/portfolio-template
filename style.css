@@ -303,7 +303,7 @@ nav li,footer li{
 .side-clicker{
     color: #754EF9;
     position: absolute;
-    right: 0.00001%;
+    right: -100px;
     top:50%;
     transform: rotate(90deg)
 }
@@ -519,6 +519,8 @@ box-shadow: 0px 5px 15px 0px  rgba(0, 0, 0 , 16%);
     opacity: 50%;
     line-height: 24px;
     letter-spacing: 1px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 
@@ -627,4 +629,100 @@ footer{
 
 #social-icons a{
     font-size: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-header-middle{
+        max-height: none;
+        display: block;
+        margin: auto;
+    }
+    .main-header-middle > div{
+        margin: auto;
+    }
+    .main-header-middle > div:first-child{
+        /* margin-top: 5%; */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header-middle{
+        max-height: none;
+        display: flex;
+        margin: auto;
+        align-content: center;
+    }
+    .main-header-middle > div{
+        margin: auto;
+    }
+    .main-header-middle > div:first-child{
+        /* margin-top: 5%; */
+    }
+    .my-work-main{
+        font-size: 70px;
+    }
+
+    .punch-line{
+        font-size: 20px;
+    }
+
+    .my-work-main-work-o{
+        top: 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    .testimonial-div{
+        width: 90%;
+        padding: 30px 10px;
+    }
+    #testimonial-section,#portfolio-section{
+        width: 100%;
+    }
+    #large-img{
+        width: auto;
+        
+    }
+    #large-img > div > div > div:first-child{
+        height: auto;
+    }
+
+    .brand{
+        font-size: 25px;
+    }
+
+    footer{
+        width: 100%;
+    }
+    /* footer > ul,div{
+        margin: auto;
+        display: block;
+    } */
+
+    footer ul,div{
+        margin: auto;
+        display: block;
+    }
+    footer li{
+        margin: 10px 0;
+    }
+
+    #footer-links a{
+        margin: auto;
+        font-size: 12px;
+    }
+    #social-icons a{
+        font-size: 20px;
+    }
+
+
+
+    #social-icons,#footer-links{
+        flex-grow: 0;
+        flex-basis: auto;
+        margin: auto;
+    }
+    /* header{
+        height: fit-content;
+    } */
 }
